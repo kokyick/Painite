@@ -27,8 +27,9 @@ contract ERC20ERT is BasicERT {
 
   // Approval - sets the allowance
   function approve(address _spender, uint256 _value) public returns (bool success) {
-    if(_value <= 0) return false;
-
+    if (_value < (1/(100000*10**16))) {
+      return false;
+    }
     // 3. Simply add/change the amount in allowances
     allowances[msg.sender][_spender] = _value;
 
