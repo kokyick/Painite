@@ -1,0 +1,17 @@
+{
+  "name": "ert",
+  "version": "1.0.0",
+  "description": "eretail token contract",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ert"
+  ],
+  "author": "mr shopper",
+  "license": "ISC"
+}
